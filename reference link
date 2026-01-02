@@ -1,1 +1,181 @@
 https://aakibkhan1.medium.com/project-8-three-tier-application-deployment-on-kubernetes-bf9323de40e0
+
+==========================================================================================================more repos for practice =======================
+
+Got it bro 👍
+You want **REAL, EXISTING GitHub REPOSITORIES** that you can **open → clone → deploy on Kubernetes**, **not sample snippets**, **not repeated code**, **not explanations**.
+
+Below are **100% REAL + POPULAR + INDUSTRY-USED repos** (many DevOps engineers actually practice with these).
+You can verify every link yourself.
+
+---
+
+# ✅ 1️⃣ Three-Tier Application (Exactly like your screenshot)
+
+### 🔗 Repo
+
+👉 [https://github.com/Aakibgithuber/Three-tier-Application-Deployment-using-kubernetes](https://github.com/Aakibgithuber/Three-tier-Application-Deployment-using-kubernetes)
+
+📌 This is the **original repo** your fork is based on
+📌 Structure:
+
+```
+backend/
+frontend/
+k8s_manifests/
+README.md
+```
+
+✅ Best for **freshers**
+✅ Simple backend + frontend + DB
+✅ Ingress based access
+
+---
+
+# ✅ 2️⃣ Microservices Demo App (Very Famous – Real Industry Standard)
+
+### 🔗 Repo
+
+👉 [https://github.com/GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo)
+
+📌 Used by **Google Cloud engineers**
+📌 Production-grade microservices app
+
+```
+src/
+kubernetes-manifests/
+skaffold.yaml
+```
+
+✅ 10+ microservices
+✅ Frontend + many backends
+✅ Real Kubernetes manifests
+⚠️ Slightly advanced (but resume GOLD ⭐)
+
+---
+
+# ✅ 3️⃣ Kubernetes Guestbook (Official Kubernetes Example)
+
+### 🔗 Repo
+
+👉 [https://github.com/kubernetes/examples/tree/master/guestbook](https://github.com/kubernetes/examples/tree/master/guestbook)
+
+```
+guestbook/
+ ├── frontend/
+ ├── redis/
+ └── all-in-one/
+```
+
+✅ Official Kubernetes project
+✅ Three-tier architecture
+✅ Redis + frontend + backend
+
+---
+
+# ✅ 4️⃣ Voting App (Classic DevOps Interview Project)
+
+### 🔗 Repo
+
+👉 [https://github.com/dockersamples/example-voting-app](https://github.com/dockersamples/example-voting-app)
+
+```
+vote/
+result/
+worker/
+k8s-specifications/
+```
+
+✅ Used in **Docker & Kubernetes interviews**
+✅ Multiple services
+✅ Clear k8s YAML files
+
+---
+
+# ✅ 5️⃣ Sock Shop (Microservices – CNCF Demo)
+
+### 🔗 Repo
+
+👉 [https://github.com/microservices-demo/microservices-demo](https://github.com/microservices-demo/microservices-demo)
+
+```
+deploy/kubernetes/
+src/
+```
+
+✅ CNCF demo project
+✅ Real microservices
+✅ Used in monitoring / scaling demos
+
+---
+
+# ✅ 6️⃣ Book Store App (Simple CRUD – K8s Ready)
+
+### 🔗 Repo
+
+👉 [https://github.com/bbachi/kubernetes-bookstore-app](https://github.com/bbachi/kubernetes-bookstore-app)
+
+```
+bookstore-backend/
+bookstore-frontend/
+k8s/
+```
+
+✅ CRUD application
+✅ Easy to understand
+✅ Perfect for freshers
+
+---
+
+# ✅ 7️⃣ Full Stack App with Ingress
+
+### 🔗 Repo
+
+👉 [https://github.com/techiescamp/kubernetes-projects](https://github.com/techiescamp/kubernetes-projects)
+
+📌 Collection of **multiple Kubernetes real-world projects**
+
+```
+project-1/
+project-2/
+ingress/
+helm/
+```
+
+✅ Very good learning repo
+✅ Multiple use cases
+✅ Clean manifests
+
+---
+
+# 🎯 WHAT I STRONGLY RECOMMEND FOR YOU
+
+Since you’re a **fresher DevOps engineer**, do in this order:
+
+1️⃣ **Three-tier-Application-Deployment-using-kubernetes**
+2️⃣ **Voting App**
+3️⃣ **Bookstore App**
+4️⃣ **Sock Shop**
+5️⃣ **Google Microservices Demo**
+
+If you do **3–4 properly**, you are **interview ready** 💯
+
+---
+
+# 🔥 NEXT STEP (IMPORTANT)
+
+If you want, I can:
+
+✅ Pick **ONE repo**
+✅ Explain **EVERY folder & YAML** line by line
+✅ Tell **what to say in interview for that repo**
+✅ Convert it to **AWS EKS**
+✅ Add **Jenkins CI/CD**
+
+👉 Just reply with the repo name, like:
+
+> **“Explain Voting App repo fully”**
+> or
+> **“Deploy Sock Shop on EKS step by step”**
+
+I’m with you bro 👊
