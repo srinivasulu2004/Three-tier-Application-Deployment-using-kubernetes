@@ -1,0 +1,41 @@
+Step 1: Download the LATEST official policy (DO NOT SKIP)
+'''
+curl -o iam_policy.json \
+https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+'''
+Step 2: Create a NEW policy version & set it as default
+'''
+aws iam create-policy-version \
+  --policy-arn arn:aws:iam::132669331722:policy/AWSLoadBalancerControllerIAMPolicy \
+  --policy-document file://iam_policy.json \
+  --set-as-default
+''''''hint :: change aws account number ..
+🔹 Step 3: Verify the permission is now present
+'''
+aws iam get-policy-version \
+  --policy-arn arn:aws:iam::132669331722:policy/AWSLoadBalancerControllerIAMPolicy \
+  --version-id v2
+''''
+ confirm you can see
+     '''  
+       "elasticloadbalancing:DescribeListenerAttributes"
+    ''''
+
+step 4: this command apply the load balancer policy to your eks cluster so that your eks cluster is working with your load balancer according to the policy
+
+'''
+eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=three-tier-cluster --approve
+''''
+step 5 : this command create and attach an service account to your cluster so that your cluster is allowed to work with load balancer service
+   ""
+  eksctl create iamserviceaccount \
+  --cluster=three-tier-cluster \
+  --namespace=kube-system \
+  --name=aws-load-balancer-controller \
+  --role-name AmazonEKSLoadBalancerControllerRole \
+  --attach-policy-arn=arn:aws:iam::132669331722:policy/AWSLoadBalancerControllerIAMPolicy \
+  --approve \
+  --region=us-east-1
+
+""'
+'''''''''''''''''''''now follow the link "https://aakibkhan1.medium.com/project-8-three-tier-application-deployment-on-kubernetes-bf9323de40e0" ''''''from the headding""All the policies are attached let’s deploy the load balancer
